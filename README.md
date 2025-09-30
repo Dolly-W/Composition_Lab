@@ -9,6 +9,9 @@ A C++ class for representing banking functions in a simple bank management syste
 | `accountNumber` | `std::string`  | Unique account identifier.         |
 | `holderName`    | `std::string`  | Name of the account holder.        |
 | `balance`       | `double`       | Current balance of the account.    |
+| `type`          | `string`       | "Deposit" or "Withdrawal"          |
+| `amount`        | `double`       | Amount of transaction              |
+| `timestamp`     | `string`       | Time transaction took place        | 
 
 ## Method List
 
@@ -29,6 +32,7 @@ A C++ class for representing banking functions in a simple bank management syste
 |`bool operator<(const BankAccount &other) const`            | `bool`              | Returns true if the balance is less than the other account balance.          |
 |`bool operator>(const BankAccount &other) const`            | `bool`              | Returns true if the balance is greater than the other account balance        |
 |`static BankAccount createAccountFromInput()`               | `BankAccount`       | Prompts user to input account number, holder name, and initial balance.      |
+|`void printHistory()`                                       | `void`              | Prints all transactions                                                      |
 
 
 
